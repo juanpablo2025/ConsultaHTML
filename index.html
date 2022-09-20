@@ -1,0 +1,183 @@
+<!-- 
+---------------------------------------------CONSULTAR-----------------------------------------------------------
+
+1.      Consulta los otros tipos de <meta> y que significa cada uno dentro del documento HTML
+
+2.      Explica el significado de estas líneas de código
+
+    a.  <meta name="description" content="Ejemplo de HTML5" />
+
+    b.  <meta name="keywords" content="HTML5, CSS3, JavaScript" />
+
+3.      Realizar una página web donde expliques cada uno de los siguientes conceptos:
+
+    a.  Define que es un editor y que editores existen para HTML
+
+    b.  ¿Qué es HTML?
+
+    c.  Define: sitio web, pagina web, plataforma web
+
+    d.  Que es dominio, subdominio, extensión de dominio, hosting, tipos de hosting
+
+    e.  Que es enlace o url, tipos de url, extenciones de archivos
+
+    f.  Diferencias entre una app web, móvil, de escritorio e hibridas
+
+        I.      La página web principal se debe llamar index
+
+        II.     Por cada ítem anterior debes crear una página nueva
+
+        III.    En el <nav> crea un menú tipo lista con los nombres de cada pagina creada.
+
+        IV.     En la pagina principal crea un <aside>, <footer>. 7 paginas
+-->
+
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+	<meta charset=”UTF-8” />
+	<title>Introducción</title>
+
+</head>
+
+<body>
+	<header>
+		<h1>Consulta HTML</h1>
+		<nav>
+			<!--<center>-->
+			<ul>
+				<li><a href="adefinicion.html">Defición: sitio web, pagina web, plataforma web</a></li>
+				</li>
+				<li><a href="bdefinicion.html">Defición: dominio, subdominio, extensión de dominio, hosting,
+						tipos de hosting</li>
+				<li><a href="cdefinicion.html">Defición: enlace o url, tipos de url, extenciones de archivos</a>
+				</li>
+				<li><a href="ddefinicion.html">Diferencias entre una app web, móvil, de escritorio e
+						hibridas</a></li>
+
+			</ul>
+			<!--</center>-->
+		</nav>
+		<section>
+			<h1>
+				HTML
+			</h1>
+			<p>HyperText Markup Language (‘lenguaje de marcado de hipertexto’),
+				hace referencia al lenguaje de marcado para la elaboración de páginas web.
+				Es un estándar que sirve de referencia del software que conecta con la elaboración de páginas
+				web en sus diferentes versiones,
+				define una estructura básica y un código (denominado código HTML) para la definición de
+				contenido de una página web,
+				como texto, imágenes, videos, juegos, entre otros. <br /><br />
+			</p>
+			<h1>
+				Editor de textos
+			</h1>
+			<p>Un Editor de texto es un programa informático que permite crear y modificar archivos digitales
+				compuestos únicamente por textos sin formato, conocidos comúnmente como archivos de texto o
+				“texto plano”, los editores de textos más usados para HTML son:<br /><br />
+			</p>
+		</section>
+		<section>
+			<aside>
+				<blockquote><a href="https://code.visualstudio.com/">Visual Studio Code</a></blockquote>
+				<blockquote><a href="https://atom.io">Atom</a></blockquote>
+				<blockquote><a href="https://notepad-plus-plus.org/downloads">Notepad++</a></blockquote>
+				<blockquote><a href="https://www.sublimetext.com/">Sublime Text</a></blockquote>
+
+
+
+			</aside>
+		</section>
+		<section>
+			<article>
+				<h2>META Tags(etiquetas)</h2>
+				<p>Las etiquetas meta son etiquetas HTML que se colocan en la cabecera de la página y que
+					permiten incluir cualquier información relevante sobre la propia página.
+
+					todas ellas empiezan por la palabra meta.
+
+					Su utilidad principal es la de que la página sea localizada por los buscadores para
+					incluirlos en sus listas.
+					Los buscadores son sitios como Google, Yahoo, msn, etc,
+					que sirven a los usuarios para localizar otras páginas.</p>
+			</article>
+			<h3>Ejemplos de etiquetas META</h3>
+			<p>
+				<li>Autor del documento:
+
+					<br>
+					< meta name="author" content="anyelguti" />
+
+
+				</li>
+				<br>
+				<li>Descripción: Una breve descripción del contenido de la página:
+
+					<br>
+					< meta name="description" content="aprendizaje y diseño para crear páginas Web" />
+				</li>
+				<br>
+				<li>Palabras clave: Palabras clave relacionadas con la página, cada palabra o grupo de palabras
+					va
+					separada de las demás por comas. Conviene no repetir las palabras, pues los buscadores
+					podrían
+					penalizar la página.
+					<br>
+					< meta name="keywords" content="html, css, diseño web, crear páginas" />
+				</li>
+				<br>
+				<li>Copyright: indica el copyright de la página.
+					<br>
+					< meta name="copyright" content="anyelguti" />
+				</li>
+				<br>
+				<li>Generador: indica el programa con el que se ha hecho la página:
+					<br>
+					< meta name="generator" content="HTML-KIT 2.9" />
+				</li>
+				<br>
+				<li>Idioma: Idioma en el que está escrita la página. Debe ponerse si queremos que los que
+					lean
+					esa
+					página sean los usuarios que tienen los buscadores en ese idioma. Cada idioma tiene un
+					código,
+					normalmente las dos primeras letras del idioma (escritas en su propio idioma) ej: Español:
+					ES,
+					Francés: FR; Inglés: EN; Alemán DE.
+					<br>
+					< meta name="language" content="es" />
+				</li>
+				<br>
+
+				<li> Revisar cada.. : Indica a los robots cada cuanto tiempo se actualiza la página, y por
+					tanto cada
+					cuanto tiempo deben revisarla. lo normal es escribirlo en inglés (15 days, 1 month, 2
+					months,
+					etc.).
+					<br>
+					< meta name="revisit-after" content="1 month" />
+				</li>
+				<br>
+				<li>Robots: este valor indica la forma de comportarse los robots al visitar la página. los
+					valores
+					más habituales de "content" son: "index" o "noindex", para que rastree o no la página
+					principal,
+					y "follow" o "nofollow", para que rastree o no todos los enlaces que tiene la página
+					principal.
+					<br>
+					< meta name="robots" content="index, follow" />
+				</li>
+				<br>
+			</p>
+
+		</section>
+	</header>
+
+</body>
+
+
+</html>
